@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fotogram</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="./img/favicon/favicon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.x.x/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <header class="section_header">
+    <nav class="nav">
+      <img class="header_logo" src="./img/favicon.png" alt="Fotogram logo">
+      <h1 class="header_title">Fotogram</h1>
+    </nav>
+  </header>
+
+  <main class="main">
+    <dialog id="myDialog" class="dialog_section" aria-modal="true" aria-labelledby="dialogTitle" aria-describedby="dialogDescr">
+      <header>
+        <h2 id="dialogTitle">
+          <span id="imgtitle"></span>
+        </h2>
+        <button type="button" class="icon" id="CloseBtn" aria-label="Dialog schließen" title="Dialog schließen"
+          onclick="closeDialog()">
+          <i class="bi bi-x-lg icon" aria-hidden="true"></i>
+        </button>
+      </header>
+      <section>
+        <img id="dialogImg" class="dialog_img" src="" width="150" height="100" alt="">
+      </section>
+      <footer>
+        <section class="footer_info">
+          <button type="button" id="back" class="icon" aria-label="Previous image">
+            <i class="bi bi-arrow-left-circle icon" aria-hidden="true" ></i>
+          </button>
+          <span id="dialogDescr">
+            <span id="Counter" class="Counter"></span>
+          </span>
+          <button type="button" id="next" class="icon" aria-label="Next image">
+            <i class="bi bi-arrow-right-circle icon" aria-hidden="true" ></i>
+          </button>
+        </section>
+      </footer>
+    </dialog>
+    <section class="section_foto_title">
+      <h2 class="section_foto_title_info">Your Personal Foto Album</h2>
+    </section>
+    <section class="row image_section" id="image-div">
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer_logo">
+      <img class="footer_logo_img" src="./img/Developer_logo-removebg-preview.png" alt="Developer Akademie Logo">
+      <span style="color:white">Developer <br> Akademie</span>
+    </div>
+    <div class="footer_info">
+      <p class="footer_text">© 2025 Developer Akademie</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
