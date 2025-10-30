@@ -11,13 +11,12 @@ const imagesData = [
     { "id": 9, "name": "Pfad ins Unbekannte", "url": "./img/pathway-2289978_1280.jpg" },
     { "id": 10, "name": "Sonnenglanz im Wald", "url": "./img/sunlight-3130638_1280.jpg" },
     { "id": 11, "name": "Abendrotpoesie", "url": "./img/sunset-4086848_1280.jpg" },
-    { "id": 12, "name": "Wintergasse", "url": "./img/montestrutto-190471_1280.jpg" },
-    { "id": 13, "name": "Träume über den Wolken", "url": "./img/airplane-1807486_1280.jpg" },
-    { "id": 14, "name": "Wiesenglück", "url": "./img/grass-6545509_1280.jpg" },
-    { "id": 15, "name": "Weiße Weite", "url": "./img/salt-3344508_1280.jpg" },
-    { "id": 16, "name": "Die schläfrige Schafparade", "url": "./img/sheep-9401445_1280.webp" },
-    { "id": 17, "name": "Winterzauberland", "url": "./img/winter-8612635_1280.jpg" },
-    { "id": 18, "name": "Himmelsspiegel", "url": "./img/qinghai-2825151_1280.jpg" }
+    { "id": 12, "name": "Träume über den Wolken", "url": "./img/airplane-1807486_1280.jpg" },
+    { "id": 13, "name": "Wiesenglück", "url": "./img/grass-6545509_1280.jpg" },
+    { "id": 14, "name": "Weiße Weite", "url": "./img/salt-3344508_1280.jpg" },
+    { "id": 15, "name": "Die schläfrige Schafparade", "url": "./img/sheep-9401445_1280.webp" },
+    { "id": 16, "name": "Winterzauberland", "url": "./img/winter-8612635_1280.jpg" },
+    { "id": 17, "name": "Himmelsspiegel", "url": "./img/qinghai-2825151_1280.jpg" }
 ]
 
 // Get references to DOM elements
@@ -32,7 +31,7 @@ const back = document.getElementById("back");
 let currentIndex = 0;
 
 // Function to generate image grid
-function myFunction() {
+function renderImage() {
     const imageContainer = document.getElementById("image-div");
     imagesData.forEach((element, i) => {
         imageContainer.innerHTML += `
@@ -50,7 +49,7 @@ function myFunction() {
         });
     });
 }
-myFunction();
+renderImage();
 
 // Open dialog functions
 function openDialog() {
