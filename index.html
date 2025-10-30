@@ -16,40 +16,43 @@
   <header class="section_header">
     <nav class="nav">
       <img class="header_logo" src="./img/favicon.png" alt="Fotogram logo">
-      <h1 class="header_title">Fotogram</h1>
+      <h1 class="header_title" aria-label="Fotogram">Fotogram</h1>
     </nav>
   </header>
 
   <main class="main">
-    <dialog id="myDialog" class="dialog_section" aria-modal="true" aria-labelledby="dialogTitle" aria-describedby="dialogDescr">
-      <header>
-        <h2 id="dialogTitle">
-          <span id="imgtitle"></span>
-        </h2>
-        <button type="button" class="icon" id="CloseBtn" aria-label="Dialog schließen" title="Dialog schließen"
-          onclick="closeDialog()">
-          <i class="bi bi-x-lg icon" aria-hidden="true"></i>
-        </button>
-      </header>
-      <section>
-        <img id="dialogImg" class="dialog_img" src="" width="150" height="100" alt="">
-      </section>
-      <footer>
-        <section class="footer_info">
-          <button type="button" id="back" class="icon" aria-label="Previous image">
-            <i class="bi bi-arrow-left-circle icon" aria-hidden="true" ></i>
+    <div class="dialog_container">
+
+      <dialog id="myDialog" class="dialog_section" aria-modal="true" aria-labelledby="dialogTitle" aria-describedby="dialogDescr">
+        <header>
+          <h2 id="dialogTitle">
+            <span id="imgtitle"></span>
+          </h2>
+          <button type="button" class="icon" id="CloseBtn" aria-label="Dialog schließen" title="Dialog schließen"
+            onclick="closeDialog()">
+            <i class="bi bi-x-lg icon" aria-hidden="true"></i>
           </button>
-          <span id="dialogDescr">
-            <span id="Counter" class="Counter"></span>
-          </span>
-          <button type="button" id="next" class="icon" aria-label="Next image">
-            <i class="bi bi-arrow-right-circle icon" aria-hidden="true" ></i>
-          </button>
+        </header>
+        <section>
+          <img id="dialogImg" class="dialog_img" src="" width="150" height="100" alt="">
         </section>
-      </footer>
-    </dialog>
+        <footer>
+          <section class="footer_info">
+            <button type="button" id="back" class="icon" aria-label="Previous image">
+              <i class="bi bi-arrow-left-circle icon" aria-hidden="true" ></i>
+            </button>
+            <span id="dialogDescr">
+              <span id="Counter" class="Counter"></span>
+            </span>
+            <button type="button" id="next" class="icon" aria-label="Next image">
+              <i class="bi bi-arrow-right-circle icon" aria-hidden="true" ></i>
+            </button>
+          </section>
+        </footer>
+      </dialog>
+    </div>
     <section class="section_foto_title">
-      <h2 class="section_foto_title_info">Your Personal Foto Album</h2>
+      <h2 class="section_foto_title_info">Welcome to Foto Album</h2>
     </section>
     <section class="row image_section" id="image-div">
     </section>
@@ -57,11 +60,12 @@
 
   <footer class="footer">
     <div class="footer_logo">
-      <img class="footer_logo_img" src="./img/Developer_logo-removebg-preview.png" alt="Developer Akademie Logo">
+      <a href="https://developerakademie.com/" target="_blank" rel="noopener noreferrer">
+      <img class="footer_logo_img" src="./img/Developer_logo-removebg-preview.png" alt="Developer Akademie Logo"></a>
       <span style="color:white">Developer <br> Akademie</span>
     </div>
     <div class="footer_info">
-      <p class="footer_text">© 2025 Developer Akademie</p>
+      <p class="footer_text">© 2025 Developer Akademie GmbH</p>
     </div>
   </footer>
 
